@@ -8,7 +8,7 @@
  require("dotenv").config()
 
  const HOST = process.env.HOST || "127.0.0.1"
- const PORT = process.env.PORT || 8000 
+ const PORT = process.env.PORT || 10000 
 
  require("express-async-errors")  //* async-errors to errorHandler
 
