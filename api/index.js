@@ -31,7 +31,7 @@ app.use("/upload", express.static("./upload"));
 app.use(require("./src/middlewares/authentication"));
 app.use(require("./src/middlewares/queryHandler"));
 
-app.all("/api", (req, res) => {
+app.all("/", (req, res) => {
   res.send({
     error: false,
     message: "Welcome to Blog API",
