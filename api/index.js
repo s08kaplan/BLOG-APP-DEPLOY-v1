@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // Call static uploadFile:
-app.use("/upload", express.static("./upload"));
+app.use("/upload", express.static("./uploads"));
 
 // Run Logger:
 // app.use(require('./src/middlewares/logger'))
